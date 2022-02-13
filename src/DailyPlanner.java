@@ -14,6 +14,7 @@ public class DailyPlanner {
             System.out.print("Выберите действие для работы с ежедневником(1 - записать, 2 - прочитать s - выйти из программы): ");
             Scanner scanner = new Scanner(System.in);
             choice = scanner.nextInt();
+            //выбираем метод
             if (choice == 1) dailyPlanner.writeItInTheDiary();
             else dailyPlanner.readItInTheDiary();
         }while (choice != 's');
